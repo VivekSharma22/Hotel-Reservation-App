@@ -1,5 +1,24 @@
-<div>
-    <h2>Hotel Reservation App!</h2>
-    <button [routerLink]="['/new']">Create New Reservation</button>
-    <button [routerLink]="['/list']">List All Reservations</button>
+<nav class="navbar bg-dark">
+    <div class="container justify-content-center">
+        <span class="navbar-brand mb-0 h1 text-white">
+            Hotel Reservation App
+        </span>
+    </div>
+</nav>
+
+<div class="container d-flex justify-content-center mt-4">
+    <div class="card p-3 shadow-sm">
+
+
+        <div class="d-flex gap-3">
+            <button class="btn btn-secondary" [routerLink]="['/new']">
+                Create New Reservation
+            </button>
+
+            <button class="btn btn-secondary" [routerLink]="['/list']">
+                List All Reservations
+            </button>
+        </div>
+
+    </div>
 </div>

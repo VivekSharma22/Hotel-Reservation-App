@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Reseravation } from '../models/reseravation';
+import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,8 +12,6 @@ export class ReservationService {
     let savedReservations = localStorage.getItem('reservations');
     this.reservationList = savedReservations? JSON.parse(savedReservations) : [];
   }
-
-  
 
   addReservation(reservation:Reseravation): void{
     let id = Date.now().toString();

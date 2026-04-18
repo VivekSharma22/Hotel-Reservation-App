@@ -31,7 +31,6 @@ export class ReservationFormComponent {
   })
 
   let id = this.activatedRoute.snapshot.paramMap.get('id');
-  
   if(id){
     let reservation: Reseravation | undefined= this.reservationService.getReservation(id);
     if(reservation){
